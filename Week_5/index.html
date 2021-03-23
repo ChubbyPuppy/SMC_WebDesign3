@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+  <title>Cloud9</title>
+</head>
+
+<body>
+  <header>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">FATDAPTED</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-rocket"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mb-2 mb-md-0">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item mb-2 mb-md-0">
+            <a class="nav-link" href="recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+          <li class="nav-item mb-2 mb-md-0 active">
+            <a class="nav-link" href="#">Checkout<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /END NAVBAR -->
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="cart">
+            <h4 class="d-flex justify-content-between align-items-center my-3">
+              Your Cart
+              <span class="badge badge-secondary badge-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Toi'leh Pei'puh</h6>
+                  <small class="text-muted">Quality: 1 - Texture: Gold</small>
+                </div>
+                <span class="text-muted">$100</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Sandpaper Toilet Paper</h6>
+                  <small class="text-muted">Quality: 1 - Texture: Extra Sandy</small>
+                </div>
+                <span class="text-muted">$5.99</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Scrubbabutt Durable Toilet Paper</h6>
+                  <small class="text-muted">Quality: 1 - Texture: Extra Soft</small>
+                </div>
+                <span class="text-muted">$8.50</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">Promo Code</h6>
+                  <small>YPYOBOOTY</small>
+                </div>
+                <span class="text-success">-$20</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$94.49</strong>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-lg btn-block proceed">Proceed to Checkout</button>
+          </div>
+
+          <form action="" method="POST" class="needs-validation" id="checkoutForm" novalidate>
+            <!-- SHIPPING ADDRESS -->
+            <fieldset id="shipping">
+              <br>
+              <br>
+              <h3>Shipping Address</h3>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress">Street Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  This field is required.
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select name="inputState" id="inputState" class="form-control" required>
+                    <option value="" selected placeholder="Choose..."></option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+              </div>              
+            </fieldset>
+
+            <fieldset id="billing">
+              <hr class="my-4">
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="check-same">
+              <label class="custom-control-label" for="check-same">Billing Address same as Shipping Address.</label>
+            </div>
+
+                <h3>Billing Address</h3>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstName-billing">First Name</label>
+                    <input type="text" class="form-control" id="firstName-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastName-billing">Last Name</label>
+                    <input type="text" class="form-control" id="lastName-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress-billing">Street Address</label>
+                  <input type="text" class="form-control" id="inputAddress-billing" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity-billing">City</label>
+                    <input type="text" class="form-control" id="inputCity-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState-billing">State</label>
+                    <select name="inputState-billing" id="inputState-billing" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>California</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip-billing">Zip</label>
+                    <input type="text" class="form-control" id="inputZip-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- CREDIT CARD -->
+              <fieldset id="credit">
+                <hr class="my-4">
+                <h3>Credit Card</h3>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fullName">Name</label>
+                    <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp" required>
+                    <small id="nameHelp" class="form-text text-muted">Name as it appears on your credit card.</small>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="cardNmber">Credit Card Number</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="creditIcon">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
+                      <div class="invalid-feedback">
+                        This field is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputMonth">Month</label>
+                    <select id="inputMonth" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputYear">Year</label>
+                    <select id="inputYear" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="CVV" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+
+<button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
+<br>
+<br>
+              </fieldset>
+            </form>
+
+
+
+  </main>
+  <footer></footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
