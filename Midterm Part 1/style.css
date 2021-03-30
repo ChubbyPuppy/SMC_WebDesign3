@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Slabo+27px&display=swap');
+
+.container p{
+    font-family: 'Slabo 27px', serif;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.container h1 {
+    font-family: 'Anton', sans-serif;
+    color: whitesmoke;
+    font-size: 65px;
+}
+.navbar {
+    background-color: rgb(228, 4, 4);
+}
+.navbar-brand {
+    color: rgb(245, 245, 245);
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+}
+
+a{
+    font-family: 'Slabo 27px', serif;
+}
+.collapse button {
+    color: white;
+    border-color: white;
+    font-family: 'Slabo 27px', serif;
+}
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    background-image: url("");
+
+}
+
+
+
+.btn-outline-light {
+    color: rgb(65, 0, 0);
+    background-color: rgb(228, 4, 4);
+}
+img {
+    width: 100%;
+}
+h5 {
+    font-family: 'Anton', sans-serif;
+    color: rgb(228, 4, 4);
+    font-size: 40px;
+}
+
+h7 {
+    font-family: 'Anton', sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.card {
+    margin: 3px;
+}

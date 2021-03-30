@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  <title>REDTERM - MIDTERM</title>
+
+  <style>
+
+    .p {
+      text-align:center;
+    }
+
+    .cart {
+      padding: 50px;
+    }
+
+    .needs-validation {
+      padding: 50px;
+    }
+
+    .my-4 {
+      padding: 50px;
+    }
+
+    .jumbotron {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-family: 'Slabo 27px', serif;
+    }
+
+    .btn-outline-light {
+        color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .card .btn-primary .btn-lg .btn-block .proceed {
+      text-align: center;
+      color: rgb(211, 12, 12);
+      background-color: rgb(228, 4, 4);
+    }
+
+    .btn-outline-light:hover {
+        background-color: rgb(255, 202, 202);
+        color: white;
+    }
+
+    .navbar .nav-item .nav-link:hover {
+        color: white;
+    }
+
+    .card-body p {
+        color: #383D59;
+        font-size: 20px;
+    }
+
+    .card-body .card-text1 {
+        color: #69688C;
+        font-size: 28px;
+    }
+
+    .card-body .card-text2 {
+        color: #383D59;
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 40px;
+    }
+
+    .card-header {
+        background-color: rgb(82, 29, 73);
+        color: white;
+        font-family: 'Slabo 27px', serif;
+    }
+
+    .display-4 {font-family: 'Anton', sans-serif; color: white; text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);}
+
+
+    .card {margin: 70px 0px 100px 0px;}
+</style>
+
+<body>
+  <header>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">RED POUNCE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourteam.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop (3)</a>
+                </li>
+            </ul>
+                <div>  <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="fa fa-gift bigicon"></span> (3) Items in Cart<span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-cart" role="menu">
+              <li>
+                  <span class="item">
+                    <span class="item-left">
+                        <img src="" alt="" />
+                        <span class="item-info">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    <span class="item-right">
+                        <button class="btn btn-danger  fa fa-close"></button>
+                    </span>
+                </span>
+              </li>
+<li>
+                  <span class="item">
+                    <span class="item-left">
+                        <img src="" alt="" />
+                        <span class="item-info">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    <span class="item-right">
+                        <button class="btn btn-danger  fa fa-close"></button>
+                    </span>
+                </span>
+              </li>
+<li>
+                  <span class="item">
+                    <span class="item-left">
+                        <img src="" alt="" />
+                        <span class="item-info">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                    <span class="item-right">
+                        <button class="btn btn-danger  fa fa-close"></button>
+                    </span>
+                </span>
+              </li>              
+              <li class="divider"></li>
+              <a href="cart.html" class="btn btn-outline-light">Go to Cart</a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+        </div>
+    </nav>
+    <!-- /END NAVBAR -->
+
+
+    <style>
+
+      .dropdown-toggle{
+        color: rgb(228, 4, 4);
+        margin-left: 200px;
+      }
+
+      .dropdown-toggle:hover{
+        color: white;
+        text-decoration-line: none;
+      }
+     
+      ul.dropdown-cart{
+          min-width:250px;
+          border: 2px solid rgb(82, 29, 73);
+          padding: 2px;
+          margin: 7px;
+          margin-top: 11px;
+      }
+      ul.dropdown-cart li .item{
+          display:block;
+          padding:3px 10px;
+          margin: 3px 0;
+          
+      }
+      ul.dropdown-cart li .item:hover{
+          background-color:rgb(252, 222, 203);
+          
+      }
+      ul.dropdown-cart li .item:after{
+          visibility: hidden;
+          display: block;
+          font-size: 0;
+          content: " ";
+          clear: both;
+          height: 0;
+      }
+      
+      ul.dropdown-cart li .item-left{
+          float:center;
+      }
+      ul.dropdown-cart li .item-left img,
+      ul.dropdown-cart li .item-left span.item-info{
+          float:center;
+      }
+      ul.dropdown-cart li .item-left span.item-info{
+          margin-left:10px;   
+      }
+      ul.dropdown-cart li .item-left span.item-info span{
+          display:block;
+      }
+      ul.dropdown-cart li .item-right{
+          float:center;
+      }
+      ul.dropdown-cart li .item-right button{
+          margin-top:15px;
+          margin-bottom: 50px;
+      }   
+      </style>
+
+  </header>
+
+  <main>
+
+      <!-- /CAROUSEL START-->
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=""
+                      class="d-block w-100" alt="big plane">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="display-4">POUNCE LIKE A FOX.</h1>
+                  <p class="lead">Stylish workout gear and clothes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=""
+                      class="d-block w-100" alt="overview">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="display-4">LEAP WITH COMFORT.</h1>
+                  <p class="lead">Comfortable and durable workout clothing.</p>  
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="wallpaper">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="display-4">FOXY ATTITUDE.</h1>
+                  <p class="lead">Workout in a confident style.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousels" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next<span>
+        </a>
+    </div>
+    <!-- /CAROSOUL END-->
+
+    <div class="container">
+      <div class="row">
+          <div class="card-group">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="card">
+                      <img src="" class="card-img-top"
+                          alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">WHY RED POUNCE?</h5>
+                          <p class="card-text">Gone walkabout bull bar mickey mouse mate wuss give it a burl. 
+                            Pint gobful ugg boots bikie. Fair dinkum parma brisvegas you little ripper brekkie rego. Hit the turps swagger galah ace dole bludger as cross as a too right ridgy-didge. 
+                            Watch out for the quid rego milk bar fairy floss sanger. Metho sanger cranky bizzo rock up chuck a spaz. Ace dropkick piker plonk kelpie.
+                          </p>
+                              <a href="#" class="btn btn-outline-light">Read More</a>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted"></small>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="card">
+                      <img src="i" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">NOT JUST WORKOUT GEAR.</h5>
+                          <p class="card-text">Aerial pingpong tinny porky you little ripper true blue billabong flamin' whinge sickie donger greenie. 
+                            Veg out ugg rock up bazza no-hoper shag on a rock dero cobber. Smokes drongo no-hoper postie mokkies. Flick grab us a ugg boots it'll be he hasn't got a ratbag corker bull bar. 
+                            Brumby holden as cunning as a trackie dacks dob shazza got us some.
+                          </p>
+                          <a href="#" class="btn btn-outline-light">Read More</a>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted"></small>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="card">
+                      <img src="" class="card-img-top"
+                          alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">WE WANT TO HELP.</h5>
+                          <p class="card-text">Cut lunch commando oldies buckley's chance lurk sleepout fair dinkum mate's rates slab. Fremantle doctor pinga ocker gone walkabout dinky-di. Galah bizzo chokkie esky bundy metho. 
+                            Freckle bloody oath rotten bludger lets get some blowie captain cook. Mate bingle apples cracker good oil gobful heaps. 
+                            Squizz built like a as busy as a wuss bodgy kindie. Mullet full blown rego offsider banana bender what's crackin'.
+                          </p>
+                              <a href="#" class="btn btn-outline-light">Read More</a>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted"></small>
+                      </div>
+                  </div>
+              </div>
+
+      </div>
+  </div>
+
+
+  </main>
+
+
+<footer>
+
+    <style>
+        .inner-main img {
+        mix-blend-mode: luminosity;
+        width: 240px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: rgb(228, 4, 4);
+            padding: 30px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-header {
+            font-size: 28;
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+            bottom: 10%;
+        }
+
+
+
+        .contact-container {
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+        }
+
+        footer .main {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+        }
+
+        footer .left .inner-main {
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+        }
+
+        footer .inner-main {
+            width: 40%;
+        }
+
+        footer .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            font-size: 3;
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+        }
+
+        footer .footer-bottom ul {
+            display: flex;
+            font-size: 9;
+            font-family: 'Sulphur Point', sans-serif;
+            color: white;
+        }
+    </style>
+
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+
+  
+          <!-- Content -->
+          <h7 class="text-uppercase">AWARE LIKE A FOX!</h7>
+          <p>Subscribe in our newsletter here or automatic notifications!</p>
+
+          <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+              aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+            </div>
+          </form>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h7 class="text-uppercase">CUSTOMER INFO</h7>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#!">Private Policy</a>
+            </li>
+            <li>
+              <a href="#!">F&Q</a>
+            </li>
+            <li>
+              <a href="#!">Donations</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h7 class="text-uppercase">ORDER INFO</h7>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Size Chart</a>
+            </li>
+            <li>
+              <a href="#!">Shipping Rates</a>
+            </li>
+            <li>
+              <a href="#!">Delivery Times</a>
+            </li>
+            <li>
+              <a href="#!">Returns/Exchanges</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://redpounce.com/"> redpounce.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+
+    <script>
+        let email = prompt('Subscribe with your email to our newsletter for more RED POUNCE content~!',);
+
+        alert(`Thank you for subscribing to RED POUNCE~!`); 
+    </script>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
