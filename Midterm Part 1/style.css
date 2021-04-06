@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .container p{
-    font-family: 'Slabo 27px', serif;
+    font-family: 'PT Sans Caption', sans-serif;
     color: whitesmoke;
     font-size: 30px;
 }
 
 .container h1 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
     font-size: 65px;
 }
@@ -16,22 +17,22 @@
 }
 .navbar-brand {
     color: rgb(245, 245, 245);
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Permanent Marker', cursive;
     font-size: 20px;
 }
 
 a{
-    font-family: 'Slabo 27px', serif;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 .collapse button {
     color: white;
     border-color: white;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 .jumbotron {
     background-size: cover;
     background-position: center;
-    background-image: url("");
+    background-image: url("images/ourteam.jpg");
 
 }
 
@@ -45,13 +46,13 @@ img {
     width: 100%;
 }
 h5 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     color: rgb(228, 4, 4);
     font-size: 40px;
 }
 
 h7 {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     color: whitesmoke;
     font-size: 40px;
 }
