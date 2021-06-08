@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+
 .container p{
     font-family: 'PT Sans Caption', sans-serif;
     color: whitesmoke;
@@ -16,7 +17,6 @@
     background-color: rgb(228, 4, 4);
 }
 .navbar-brand {
-    image: url("red_pounce_logo.png");
     color: rgb(245, 245, 245);
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
