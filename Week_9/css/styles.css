@@ -1,0 +1,66 @@
+/* CSS Document */
+@charset "UTF-8";
+
+body {font-family: 'Quicksand', sans-serif; text-align: center;}
+
+.navbar-brand img {
+    max-width: 200px;
+}
+
+.navbar-brand {
+    padding: 0;
+    transition: transform 0.5s ease-out;
+}
+
+.navbar-brand.is-active {
+    transform: matrix(1, 0, 0.5, 1, 100, 0);
+}
+
+.navbar {
+    padding-top: 0%;
+}
+
+a{
+    transition: scale .5s ease-in-out;
+}
+
+/* unvisited link */
+a:link {
+    color: #736a66;
+    transition: 0.3s;
+}
+
+/* visited link */
+a:visited {
+    color: #736a66;
+}
+
+/* mouse over link */
+#rotate:hover {
+    color: rgb(90,79,207);
+    transform: rotate(-360deg);
+}
+
+
+.blue {
+    color: #d4af37 !important;
+}
+
+.purple {
+    color: rgb(90,79,207);
+}
+
+.bg-gradient {
+    background-color: white;
+    background-image: linear-gradient(rgb(90,79,207), #d4af37, white 60%);
+}
+
+.color {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.color:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
